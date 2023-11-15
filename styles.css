@@ -198,6 +198,14 @@ footer nav a:hover{
 .form-row button:hover {
     background-color: #76aeed;
 }
+.greeting{
+    text-align: center;
+    font-size: 100px;
+    color: rgb(166, 130, 199);
+}
+.greeting h1{
+    margin: 0%;
+}
 @media(max-width: 1023px){
     .seccion_1{
         flex-direction: column-reverse;
