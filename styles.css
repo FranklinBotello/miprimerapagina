@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    background-color: rgb(145, 155, 204);
+    align-content: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 4em;
+    display: flex;
+    margin-left: 3em;
+}
+header nav ul {
+    display: flex;
+    padding: 0;
+    gap: 1em;
+    margin-right: 5em;
+    margin-left: 5em;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+}
+header nav ul li a:hover{
+    background: rgb(112, 129, 218);
+}
+#seccion_principal{
+    background-color: beige;
+}
+.seccion_1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 3em;
+}
+.seccion_1 .acerca_de{
+    width: 60%;
+}
+.seccion_1 .acerca_imagen img{
+    border-radius: 10%;
+}
+.seccion_2{
+    display: flex;
+    justify-content: center;
+}
+.seccion_2 img{
+    width: 95%;
+}
+.lugares{
+    background-color: rgb(223, 223, 202);
+}
+.lugares h2{
+    padding-top: 0.5em;
+    padding-left: 5%;
+}
+.lugares .tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    padding: 1em 2em 2em 2em;
+}
+.lugares .tarjetas div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(151, 125, 180);
+    border-radius: 10%;
+    width: 500px;
+    height: 650px;
+}
+.lugares .tarjetas div img{
+    width: 95%;
+    border-radius: 10%;
+}
+.lugares .tarjetas div p{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+.lugares .tarjetas div h3{
+    background-color: rgb(123, 95, 156);
+}
+.lugares .tarjetas div a{
+    color: white;
+}
+footer{
+    display: flex;
+    background-color: rgb(145, 155, 204);
+    align-content: center;
+    justify-content: end;
+}
+footer nav{
+    margin-right: 3em;
+}
+footer nav a{
+    text-decoration: none;
+    display: block;
+    padding: 1em 1.5em;
+    color: black;
+    background-color: rgb(93, 114, 218)
+}
+footer nav a:hover{
+    background: rgb(112, 129, 218);
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;    
+    display: none;
+}
+.checkbtn:hover{
+    color: black;
+}
+.form_conten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #6a92b9;
+    border-radius: 3px;
+    width: 75%;
+    padding: 50px;
+    margin: auto;
+}
+.form_conten h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.formulario{
+    background-color: #b1cde9;
+    border-radius: 3px;
+    width: 60%;
+    margin: 30px 0 40px 0;
+}
+.form-row{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}  
+.form-row input[type="text"],
+.form-row input[type="email"]{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 50%;
+    padding: 7px;
+    font-size: 14px;
+}  
+.form-row label{
+    margin-bottom: 3px;
+    text-align: initial;
+}
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 150px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;  
+    width: 50%;
+}
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.form-row button:hover {
+    background-color: #76aeed;
+}
+@media(max-width: 1023px){
+    .seccion_1{
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+    header nav ul{
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: cornflowerblue;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+        margin: 0;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    header nav ul li{
+        display: block;
+        margin: 100px 0;
+        line-height: 30px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+        padding: 0%;
+    }
+    #check:checked ~ .checkbtn{
+        color: black;
+    }
+    #check:checked ~ .checkbtn:hover{
+        color: white;
+    }
+}

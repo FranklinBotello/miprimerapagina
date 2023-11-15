@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Primera Web</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <header>
+                <div class="logo">
+                    <img src="img/stadia_controller_FILL0_wght400_GRAD0_opsz24.png" alt="Logo Control">
+                </div>
+                <nav>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html">Sobre Mi</a></li>
+                        <li><a href="index.html">Lugares</a></li>
+                        <li><a href="index.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="seccion_principal">
+                <section class="seccion_1">
+                    <div class="acerca_de">
+                        <h2>Acerca de mi</h2>
+                        <p class="parrafo_1">
+                            ¡Bienvenido a mi pagina! Aqui, aprenderas mas sobre mi.
+                        </p>
+                        <p class="parrafo_2">
+                            Mi nombre es Franklin Botello y tengo 24 años, soy de colombia, Norte de Santander, soy Tecnico de Sistemas y estudiante de Ingenieria de Sistemas en la Universidad de Pamplona.
+                            <br><br>
+                            Me gustan los VideoJuegos, las series y Peliculas entre otras cosas.
+                        </p>
+                    </div>
+                    <div class="acerca_imagen">
+                        <img src="img/foto_personal.jpg" alt="imagen personal">
+                    </div>
+                </section>
+                <section class="seccion_2">
+                    <img src="img/carrusel.jpg" alt="imagen de carrusel">
+                </section>
+                <section class="lugares">
+                    <h2>Lugares</h2>
+                    <div class="tarjetas">
+                        <div>
+                            <img src="img/pamplona.jpg" alt="">
+                            <h3>Pamplona</h3>
+                            <p>
+                                Pamplona es un municipio colombiano, ubicado en el departamento de Norte de Santander. Fue la capital de la Provincia de Pamplona y su economía está basada en la gastronomía, la agricultura, el turismo (especialmente el turismo religioso) y la educación. Se le conoce como la "Ciudad Mitrada", debido a que en ella se instauró la Arquidiócesis de Nueva Pamplona, la primera diócesis católica de la región nororiental del país. La Universidad de Pamplona, destacada universidad pública de la región, tiene su sede principal en la ciudad. Su población es 59 422 habitantes (2020).
+                            </p>
+                            <a href="https://www.google.com.co/search?q=pamplona&sca_esv=9f424c2c213da00f&source=hp&ei=mxBPZfn9OMmrwbkPk7G0sAU&iflsig=AO6bgOgAAAAAZU8eq46-kcFd_9pVr4gqxCjbKySMBn8Y&gs_ssp=eJzj4tLP1TcwMjM2Mkk3YPTiKEjMLcjJz0sEAEAGBlM&oq=pamplona&gs_lp=Egdnd3Mtd2l6IghwYW1wbG9uYSoCCAAyCBAuGLEDGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDILEC4YgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESMUTUABYpQhwAHgAkAEAmAHQAaAB3AmqAQUwLjcuMbgBA8gBAPgBAcICCxAAGIAEGLEDGIMBwgIIEAAYgAQYsQPCAg4QLhiABBixAxjHARjRA8ICCxAuGIoFGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEY0QPCAgUQLhiABMICCxAuGIAEGLEDGNQCwgIIEC4YgAQYsQM&sclient=gws-wiz">Saber Mas</a>
+                        </div>
+                        <div>
+                            <img src="img/cacota.jpg" alt="">
+                            <h3>Cacota</h3>
+                            <p>
+                                Cácota es un municipio colombiano ubicado en la región sur-occidental del departamento de Norte de Santander. Su economía se basa en la producción agrícola como la papa, zanahoria, arveja, curuba y durazno así como la producción pecuaria en bovinos y áreas en pastos. Una gran parte del municipio (más de 4 mil hectáreas) forma parte del Páramo de Santurbán, fuente hídrica para Santander y Norte de Santander.
+                            </p>
+                            <a href="https://www.google.com.co/search?q=cacota&sca_esv=9f424c2c213da00f&ei=vRBPZejOG9qEwbkP0OCWWA&gs_ssp=eJzj4tLP1TcwKkxKqSw0YPRiS05Mzi9JBAA_dwZP&oq=cacota&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNhY290YSoCCAAyCBAuGLEDGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMhcQLhixAxiABBiXBRjcBBjeBBjgBNgBA0j7FFCzCFiODnACeAGQAQCYAaABoAGuB6oBAzAuNrgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIOEAAY5AIY1gQYsAPYAQHCAhAQLhiKBRjIAxiwAxhD2AECwgIHEC4YigUYQ8ICBxAAGIoFGEPCAg0QLhiKBRjHARivARhDwgIWEC4YigUYQxiXBRjcBBjeBBjgBNgBA8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAggQABiABBixA8ICCxAuGIoFGLEDGIMBwgIOEC4YxwEYsQMY0QMYgATCAgsQABiKBRixAxiDAcICCxAuGIAEGLEDGIMBwgIFEC4YgATCAggQLhiABBixA8ICCxAuGIAEGMcBGK8BwgIaEC4YgAQYsQMYgwEYlwUY3AQY3gQY4ATYAQPCAgsQLhiDARixAxiABMICGhAuGIMBGLEDGIAEGJcFGNwEGN4EGOAE2AED4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp">Saber Mas</a>
+                        </div>
+                        <div>
+                            <img src="img/chinacota.jpg" alt="">
+                            <h3>Chinacota</h3>
+                            <p>
+                                Chinácota es un municipio colombiano ubicado en el departamento de Norte de Santander.
+                                <br>
+                                Su temperatura media es 22 grados Celsius, su altitud va desde los 600 a los 3200 m s. n. m. y su población es de 18.858 habitantes, de los cuales 12.131 residen en la cabecera municipal y 6725 residen en el área rural.
+                                <br>
+                                Dista 40 kilómetros de Cúcuta, capital del departamento, y 521 kilómetros de Bogotá, capital de Colombia.
+                            </p>
+                            <a href="https://www.google.com.co/search?q=chinacota&sca_esv=9f424c2c213da00f&ei=nxBPZe3zLMGbwbkPwp-N2AU&gs_ssp=eJzj4tLP1TcwsjAoLskwYPTiTM7IzEtMzi9JBABN8Acn&oq=chinacota&gs_lp=Egxnd3Mtd2l6LXNlcnAiCWNoaW5hY290YSoCCAAyCBAuGLEDGIAEMgcQABiKBRhDMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyFxAuGLEDGIAEGJcFGNwEGN4EGOAE2AEDSNAhUMAOWNsacAJ4AZABAJgByQGgAeALqgEFMC44LjG4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICDhAAGOQCGNYEGLAD2AEBwgIQEC4YigUYyAMYsAMYQ9gBAsICBxAuGIoFGEPCAgsQABiABBixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIIEAAYgAQYsQPCAggQABiKBRixA8ICCxAAGIoFGLEDGIMBwgIWEC4YigUYQxiXBRjcBBjeBBjgBNgBA8ICChAAGIoFGLEDGEPCAgoQLhixAxiKBRhDwgIKEC4YigUYsQMYQ8ICBRAuGIAEwgIIEC4YgAQYsQPCAgsQLhiABBixAxiDAcICCxAuGIoFGLEDGIMBwgIZEC4YsQMYigUYQxiXBRjcBBjeBBjgBNgBA-IDBBgAIEGIBgGQBhO6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBQ&sclient=gws-wiz-serp">Saber Mas</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="form_conten">
+                    <h1>Contacto</h1>
+                    <p><em>¡Esperamos tu consulta!</em></p>
+                    <form action="" method="get" class="formulario" id="form">
+                        <div class="form-row">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" type="text" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="Ejemplo@gmail.com"
+                            />
+                        </div>
+                        <div class="form-row">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button>Enviar</button>
+                        </div>
+                        <p class="alertas" id="alertas"></p>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <nav>
+                    <a href="index.html">^</a>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
